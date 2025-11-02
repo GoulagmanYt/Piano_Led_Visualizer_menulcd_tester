@@ -17,7 +17,6 @@ All source comments/docstrings are in **English**.
 ## ⚙️ One‑time adjustment in PLV (logging path)
 In PLV’s `log_setup.py`, adjust the rotating file handler to your local path (Windows example):
 ```python
-from logging.handlers import RotatingFileHandler
 file_handler = RotatingFileHandler(r'CUSTOM PATH\Piano-LED-Visualizer-master\visualizer.log', maxBytes=500_000, backupCount=10)
 ```
 Use a raw string (`r''`) or escape backslashes on Windows.
