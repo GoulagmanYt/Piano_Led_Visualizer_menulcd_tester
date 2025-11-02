@@ -395,14 +395,14 @@ class MenuLCDBridge:
         self.logger.error(msg)
 
     def action_up(self):
-        print('[BRIDGE] action_up -> change_pointer(-1)')
+        print('[BRIDGE] action_up -> change_pointer(0)')
         f = getattr(self.instance, 'change_pointer', None)
         if callable(f):
             try:
-                f(-1)
+                f(0)
                 return
             except Exception as e:
-                self._push_error(f'change_pointer(-1) error: {e}')
+                self._push_error(f'change_pointer(0) error: {e}')
         self._call_if_exists(('button_up','on_up','nav_up','up'))
 
     def action_down(self):
