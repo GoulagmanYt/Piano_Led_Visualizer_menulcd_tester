@@ -20,7 +20,7 @@ In PLV’s `log_setup.py`, adjust the rotating file handler to your local path (
 file_handler = RotatingFileHandler(r'CUSTOM PATH\Piano-LED-Visualizer-master\visualizer.log', maxBytes=500_000, backupCount=10)
 ```
 Use a raw string (`r''`) or escape backslashes on Windows.
-(You will need to put the original path if you want to test the menu in your Rpi)
+(You will need to put back the original path if you want to test the menu in your Rpi)
 ---
 
 ## 🚀 Quick Start
