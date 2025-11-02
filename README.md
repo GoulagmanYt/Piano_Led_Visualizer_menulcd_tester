@@ -93,5 +93,4 @@ python app.py --lcd 240   # 240×240 (1.3",  ST7789)
 
 ## 📂 What’s in this package?
 - The desktop preview app (Qt/PySide6)
-- English‑only comments/docstrings
 - Minimal glue to point to your existing PLV repo
