@@ -7,6 +7,13 @@ This distribution contains English-only comments/docstrings.
 - Python 3.10–3.12 (64-bit recommended)
 - Windows, macOS, or Linux
 - Path to the original Piano-LED-Visualizer repository (prompted on first run)
+- Paste the font folder in the PLV master folder (same folder as visualizer.py)
+- Change in PLV the path in log_setup.py
+
+## Changes to do for log_setup.py
+```powershell
+file_handler = RotatingFileHandler('CUSTOM PATH\Piano-LED-Visualizer-master/visualizer.log', maxBytes=500000, backupCount=10)
+```
 
 ## Virtual environment
 ### Windows (PowerShell)
@@ -30,7 +37,7 @@ pip install -r requirements.txt
 ## Run
 ```bash
 python app.py
-# or force LCD profile:
+# or force LCD profile (you can change it in the app anyway):
 python app.py --lcd 128   # 128×128 (1.44", ST7735)
 python app.py --lcd 240   # 240×240 (1.3",  ST7789)
 ```
