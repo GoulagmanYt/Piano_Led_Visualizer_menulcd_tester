@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+# !/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 PianoLCDExactPreview - Windows desktop previewer for onlaj/Piano-LED-Visualizer LCD,
@@ -106,7 +106,7 @@ class LCDViewport(QWidget):
             if frame is None:
                 return
             # upscale with PIL NEAREST by exact integer factor only
-            if self.scale != 1:
+            if self.scale!= 1:
                 up = frame.resize((frame.width * self.scale, frame.height * self.scale), resample=0)  # Image.NEAREST
             else:
                 up = frame
@@ -166,7 +166,7 @@ class MainWindow(QMainWindow):
             except Exception:
                 pass
         except Exception as e:
-            self.setCentralWidget(SafeLabel("Initialisation du LCD échouée :\n\n" + str(e) + "\n\nVérifiez le dossier du repo, les polices (FreeSansBold.ttf / FreeMonoBold.ttf) et les fichiers config/*.xml, puis utilisez 'Change Repo…' pour réessayer.", self))
+            self.setCentralWidget(SafeLabel("Initialization du LCD échouée:\n\n" + str(e) + "\n\nVérifiez le dossier du repo, les polices (FreeSansBold.ttf / FreeMonoBold.ttf) et les fichiers config/*.xml, puis utilisez 'Change Repo…' pour réessayer.", self))
 
         # Status dock with live info/logs
         self.status_dock = QDockWidget("Status", self)
