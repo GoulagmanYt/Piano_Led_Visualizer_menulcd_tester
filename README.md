@@ -41,22 +41,6 @@ python app.py
 # (You can choose the PLV path on first launch)
 ```
 
-### macOS / Linux
-```bash
-# 1) Create & activate venv
-cd <your_extracted_folder>
-python3 -m venv .venv
-source ./.venv/bin/activate
-
-# 2) Upgrade pip & install deps
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-
-# 3) Run
-python app.py
-# (You can choose the PLV path on first launch)
-```
-
 ---
 
 ## 🖥️ Forcing the LCD profile (optional)
