@@ -78,7 +78,7 @@ python app.py --lcd 240   # 240×240 (1.3",  ST7789)
 - **Hot reload**: Ctrl+R
 - **Snapshot** (PNG): Ctrl+S
 - **GIF record** (short capture): Ctrl+G
-- **Scroll/Page**: Arrow keys, W/S, K/J, PageUp/PageDown
+- **Scroll/Page**: Arrow keys, W/S, K/J, PageDown (PageUp not working rn)
 - **Select/Back**: Enter/Space, Backspace/Esc
 - **Scale**: Toolbar scale selector
 
